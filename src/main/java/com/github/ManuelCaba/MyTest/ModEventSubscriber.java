@@ -1,5 +1,6 @@
 package com.github.ManuelCaba.MyTest;
 
+
 import net.minecraft.item.Item;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.event.RegistryEvent;
@@ -13,7 +14,7 @@ public class ModEventSubscriber {
 	@SubscribeEvent
 	public static void onRegisterItems(RegistryEvent.Register<Item> event) 
 	{
-		event.getRegistry().registerAll(setup(new Item(new Item.Properties()), "thor's hummer"));
+		event.getRegistry().registerAll(setup(new Item(new Item.Properties()), "thors_hummer"));
 	}
 	
 	public static <T extends IForgeRegistryEntry<T>> T setup(final T entry, final String name)
