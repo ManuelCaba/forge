@@ -1,11 +1,11 @@
-package com.github.ManuelCaba.MyTest;
+package com.github.ManuelCaba.mytest;
 
 import java.util.stream.Collectors;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import lists.ThorsHummerItem;
+import lists.ItemList;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -83,7 +83,7 @@ public final class MyTest {
             // register a new item here
         	event.getRegistry().registerAll
         	(
-                ThorsHummerItem.thors_hummer = new Item(new Item.Properties().group(ItemGroup.COMBAT)).setRegistryName(location("thors_hummer"))
+                ItemList.thors_hummer = new Item(new Item.Properties().group(ItemGroup.COMBAT)).setRegistryName(location("thors_hummer"))
         	);
         	
             LOGGER.info("Item registered");
