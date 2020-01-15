@@ -11,7 +11,7 @@ public class ItemConfig
 	{
 		common.comment("Item Config");
 		
-		mjlnirbasedamage = common.comment("Attack damage of the Mjlnir.").defineInRange("item.gluttonybasedamage", 60.0D, 0.0D, 1000.0D);
+		mjlnirbasedamage = common.comment("Attack damage of the Mjlnir.").defineInRange("item.mjlnirbasedamage", 100.0D, 0.0D, 1000.0D);
 	}
 	
 }
